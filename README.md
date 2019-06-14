@@ -27,6 +27,8 @@ cd centos-miniconda
 env_name=myenv
 ```
 
+可以把`myenv`改成你喜欢的任意环境名称（但不能是base，因为base是默认会安装的环境）
+
 ## 部署
 
 ```
