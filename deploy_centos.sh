@@ -18,13 +18,13 @@ if [ ! -f "$conda" ]; then
     bash $miniconda -b -q
 
     # 初始化
-    /home/$USER/miniconda3/bin/conda init
+    $conda init
     source ~/.bashrc
 fi
 
 # ########################## 创建虚拟环境 ##########################
 
-conda create -n $env_name python=3.6.6 -y
+$conda create -n $env_name python=3.6.6 -y
 
 echo "# To activate this environment, use"
 echo "# "
