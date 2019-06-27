@@ -1,6 +1,10 @@
 # ########################## 配置项 ##########################
 
-conda=/home/$USER/miniconda3/bin/conda
+if [ $USER == 'root' ];then
+    conda=/root/miniconda3/bin/conda
+else
+    conda=/home/$USER/miniconda3/bin/conda
+fi
 miniconda=Miniconda3-latest-Linux-x86_64.sh
 env_name=myenv
 
